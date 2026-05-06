@@ -1,5 +1,5 @@
 # UniSAGE：Unifying Static and Dynamic Attributes with Hyper-Structure
-The code implementation for paper "UniSAGE: Unifying Static and Dynamic Attributes with Hyper-Structure".
+This is the official PyTorch code implementation of the paper *UniSAGE: Unifying Static and Dynamic Attributes with Hyper-Structure*, which has been accepted by **IJCAI-ECAI 2026**.
 
 This project introduces a framework for training Graph Neural Network models on complex, heterogeneous graphs by orthogonally collecting dynamic and static information. Compared to conventional methods that mix different information types, our approach avoids potential information loss that can occur during the fusion process. By preserving the distinct characteristics of dynamic and static features, the model can learn more robust and informative representations for predictive tasks.
 
@@ -190,3 +190,16 @@ These shell script variables are used to generate the final command. The Python 
 | `--ssagg_lambda`      | Lambda for the SSAgg layer.                        | `float` | `1.5`            |
 | `--dropout`           | Dropout rate.                                      | `float` | `0.5` (Class) / `0.3` (Reg) |
 | `--orthogonal_lambda` | Lambda for the orthogonal loss component.          | `float` | `0.1`            |
+
+### Citation
+
+If you find this code or our paper useful, please consider citing our work:
+
+```bibtex
+@inproceedings{fang2026unisage,
+  title={UniSAGE: Unifying Static and Dynamic Attributes with Hyper-Structure},
+  author={Fang, Taoran and Deng, Yan and Wang, Chunping and Wang, Yang and Chen, Lei and Yang, Yang},
+  booktitle={Proceedings of the 35th International Joint Conference on Artificial Intelligence (IJCAI-ECAI 2026)},
+  year={2026}
+}
+```
